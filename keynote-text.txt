@@ -1,0 +1,429 @@
+slide 1:
+
+
+hello everyone, thank you for coming today and attending my keynote : The Linux App Ecosystem - A Renaissance that Nobody is Watching
+
+I want to thank the organizers for SeaGL for giving me this opportunity to
+passionately talk about this ecosystem. SeaGL has always been about allowing
+newcomers to have the opportunity to present. That goes for me as well,
+since this is my first talk that's labeled a keynote and I've been in open
+source for 23 years or more.
+
+slide 2:
+Let's first define, what I'm talking about - The Linux App Ecosystem. It's
+essentiallye everyone who is volunteers their time to support writing
+applications on the Linux platforms. Documentation, bug triagers, social
+engagers, toolkit writers, middleware, frameworks, designers - the Linux App
+Ecosystem is a meta ecosystem that involves every skill set you can think of.
+
+As an aside, I spent a lot of my time in the GNOME project as the 'water cooler guy' - I didn't code, I just said a lot of funny things, and I had opinions. But interestingly, you needed a water cooler guy because that was the person you can easily talk to, tell your problems to, and to rant at while being a safe space. It turns out there is a role for being able to create safe spaces for a free and open source project.
+
+Slide 3:
+
+When people think about the app ecosystem - invariably this meme comes of
+YEAR OF THE DESKTOP
+
+I hate this meme. Because it implies that building a platform for applications is
+sisypheusian task. Endlessly, working on something but not moving the needle. Working 
+in obscurity. Every day is the year of the desktop.
+
+It's even a joke inside our own - a sarcastic comment, making fun of ourselves.
+
+Even the 'desktop' has turned into an instant turn off. That's why we're the app
+ecosystem - because you likely won't get a competitive talk slot. That's how
+harmful that meme is. 
+
+Why haven't we taken over the desktop? Why is the MacBook the choice of 
+open source folks? Where are the apps? Where are we going? What strides 
+have been made?
+
+Slide 4:
+
+Let's hold that question for a bit. I first want to address the sisphyean 
+element. That we are building a body of work that has no impact.
+
+I have some tales to tell!
+
+Slide 5:
+Tale #1 A story of two file browsers.
+
+GNOME and KDE bought started working on respective file browser. KDE had had 
+Konquorer and GNOME had GMC - otherwise known as GNOME Midnight Commander. Konquorer
+was pretty advanced. It was a one stop shop, you can browse files and even load
+them into the page - eg pdfs, text etc. It could also even load web pages. 
+
+They wrote a widget called khtml - khtml was pretty rad. It was a standard 
+compliant html renderer. It was small, efficient, and fast. 
+
+Meanwhile on the GNOME side, a startup formed by a man named Andy Hertzfield. 
+Andy turns out, is a pretty big deal he was on the original team that created 
+the Macintosh operating system 7. The startup was called 'Eazel'. I'm wearing
+one of the rare t-shirts that was out there at the time. Eazel started writing
+what is today's file browser called 'nautilus'. The idea behind nautilus was 
+not just a browser, but to add an internet connected hard drive. Sound familiar?
+Yes, they were basically writing dropbox before dropbox. Unfortunately, many 
+didn't quite get it. Eventually, after awhile the company folded but before
+it did a lot of the work to create nautilus. The work continued and supported
+by the community. A testament to the power community that even when the company 
+died - it works lives on.
+
+Now, things take on an interesting twist. What do you think happened afterwards?
+
+Well - the Eazel folks, after things folded. Some found jobs at other places 
+like mozilla. But a lot of them ended up being hired back in Apple.
+
+Turns out, Apple was starting a new project, lead by who is now known as Lisa Melton, 
+her dead name for historical reference was Don Melton. Lisa along with
+others from the former Eazel startup wanted to build a new browser technology. 
+After looking around for a base technology they settled on using khtml for the 
+reasons I enumerated earlier. So they forked khtml, and named the 
+project 'webkit'.
+
+Webkit of course became the basis for Safari, Chrome, and Edge. In addition, 
+it was also the technology used for webapps. An entire ecosystem of apps
+that you use online found its genesis by a team that was part the GNOME project,
+and technology created by the KDE project. It's not a story you hear often
+but it does show the power of what happen when we combine projects and work 
+together.
+
+
+Slide #6:
+
+The next one is actually two short tales -one involves a friend of mine. We
+met back in 2006 at the GNOME community conference. He was maintainer of
+pulseaudio.  Some of you would know Lennart Poettering. He wrote alongside
+with Kay Sievers - systemd. But the problem space he was solving was the
+desktop space.  Today, GNOME and KDE both use systemd replacing components
+and doing start ups using it rather than home grown ones that they had
+before. Today, most of us do not use the Linux platform without systemd.
+
+There are loads of libraries out there that is ubqutious in their usage -
+another one that the GNOME community created was libxml2. libxml2 is in
+everything. Look in the instructions for a smart tv and you'll see a list
+of software licenses - libxml2 is there. GTK is used in the kindle. The
+KDE desktop is used in the Steam Deck, and the desktop for the German govt
+and its embassies around the world.
+
+There are a lot of examples of the close work that was done in graphics
+with the Linux kernel community.
+
+
+Slide #7
+
+The last bit of thing I wanted to mention. In the early days of open source, 
+we were mostly focused today on code or things that was close to code. 
+Bug tracking, issue management, Q&A and general code maintaining. For most,
+people generally are spending time on code related things.
+
+That's all well and good - but we're writing applications here with a 
+clear UX or rather needed a good UX. Back in the day, GNOME had a simple 
+philosophy - "Just works" - meaning an app works as you'd intend without 
+having to do too much fiddling with options and the like. For that you need
+design. I'm pretty sure that GNOME is the first large scale open source project 
+to incorporate designers into the open source work flow. That required
+changing the software culture around building code to sharing it with 
+a designer. Designing software in the open? Hard. Like trying to play piano 
+while someone is yelling at you that you are playing the song wrong, that's you're not
+playing it like their mother played it.
+
+GNOME plays an important role in adoption of technology.
+
+A lot of you know git. After the kernel switched to git, at the time
+the free and open source world was using software like CVS and Subversion.
+The first project of consequence that switched was Xorg the display server
+for Linux. The xorg people and the gnome people have a fairly close 
+relationship. After that switched, GNOME made the switch in 2008. After that
+KDE, Fedora, and a number of distributions and software projects started
+using git and it is of course how git became the VCS of choice. GNOME had
+done a lot of the engineering to move by that time 10+ year code base over. 
+Once you can prove that something as old and large like GNOME works with git, 
+it's proven itself.
+
+The same could be said in the adoption of the CE edition of GitLab. After
+the initial adoption by GNOME - the rest of the ecosystem follow through with 
+Debian, KDE, Fedora, and so on.
+
+The adoption of Gitlab became an important milestone for the app ecosystem. 
+At this point, our tooling was largely aligned - git, and gitlab for issue
+tracking, documentation and everything else. 
+
+
+Slide #8
+
+Let's stop.. take a breath. Most of what I've been telling you about has been
+historical, but it was important to explain where we were in the ecosystem 
+and how influential we actually are.
+
+Slide #9
+
+While we were going through our gyrations - what was happening in open source
+space. The rise of corporate driven open source of course. Open Source made
+a ton of inroads in web engines. The web was powered by open source. That
+lead to the data center where projects like hadoop, and other clustering software
+came into existence, containers and other technologies became prevalent and the
+web space became even more interesting. Now we have AI where we have many 
+open source frameworks.
+
+Companies were recruiting open source people, investing money, and building
+communities around their open source projects or open core products.
+
+Huge expansive groups, lots of interests. 
+
+Where did the desktop fit in? It didn't. This thing called a cell phone showed up.
+Now web apps have become the new thing. Your email, your office productivity 
+apps, are all on the web accessible from your desktop, your tablet, 
+and your phone. The phone is the most popular internet connected device 
+in the world. The idea of a desktop sames almost an afterthought. Isn't it?
+
+And so, the app ecosystems found itself with less sponsors, less conferences
+willing to hear about what's going on the desktop. Silo'd but still with
+a large number of users who still care and believe in the Linux desktop. But
+our place in the open source world though has not been.
+
+The year of the Linux desktop indeed.
+
+Too bad for them - because there is a renaissance happening.
+
+I can feel it. There is magic.
+
+Harken back to the time we moved to Gitlab - that was the start.
+
+Thanks to GitLab, we had the ability to do continous integration? But with
+what?
+
+For two decades GNOME was frustrated. Our software has always been packaged
+by distributions but always with modifications that could represent localisms,
+or issues with their toolchain and so on. Sometimes some value-add would be 
+added that would change the vision that we've envisioned and so on. GNOME envied
+projects like KDE's Neon which was KDE on their terms.
+
+And so.. here is what is exciting to me.
+
+GNOME OS - almost a rallying cry. A chance to lead by example, to demonstrate
+our vision - derived purely from our sources. About 3 years ago, GNOME OS
+became a reality. It was in fact a game changer. One of the things that
+was missing from our development flow was to be able to make modifications
+and see it reflected in the desktop and then be able to run Q&A on the desktop.
+
+We finally had the ability to see our design changes and interact with them.
+Build Q&A pipelines to test for regressions from both a visual and non-visual.
+
+GNOME OS is an incubator of operating system level incubation. For instance, 
+ways we could use systemd, mobile home directories, and various other things
+that touches the desktop from the OS level. This allowed us to experimentation
+that is separate from the distributions. One of our members created a tool 
+called OSTree that would allow GNOME OS to install development tools to be
+able to test out code directly on GNOME OS. GNOME OS is not a distribution, 
+it is a tool to help test and development GNOME under a pure code environment.
+It can be used to help drive A/B user testing.
+Although that has not stopped some from using it as a daiily driver.
+
+There was another benefit - we can now give virtual machines of GNOME OS
+for influencers, tech reporters, and various others to test drive before release. 
+GNOME has the ability to modify their desktop experiences through javascript plugins 
+similar to Firefox. We can now have these developers to be able to test 
+upcoming versions of GNOME to make sure that their extensions are working 
+ahead of release. Ultimately, GNOME OS makes GNOME much more reliable but also
+easily testable.
+
+Flatpak/Flathub - Apps stores
+
+One of the other challenges that we've had when it comes to the ecosystem is 
+writing and distributing applications. As one could imagine there are a lot
+ of ways to distribute applications. In the olden days, you'd write an OSS
+ app and a packager would show up and then build it for you and then put it
+ in with the distribution. The developer never had to actually working about
+ distributing the app. The problem comes with the fact that every distribution
+ would have its own toolchain. The toolchain would contain various versions of
+ the tools that would be different than the developer - those packaged apps
+ would exhibit bugs unique to just that distribution. An OSS developer would
+ then have bugs from 12+ distributions that they would have triage and figure 
+ out. There was generally rpm and debian based distros and it wouldn't mix.
+
+ Thanks to container technology, we are now able to distribute applications 
+ to any distro with everything you need to run the application inside the
+ container. Even better, the user running the application is running exactly
+ as how the developer envision it should run. Code contributions become easier
+ because there is SDK that comes with it allowing you to use the same 
+ toolchain. A potential contributor need not even have to install development
+ tools to contribute because it is all encapsulated in GNOME's IDE GNOME 
+ Builder. Simplifying the contribution model imemensely.
+
+ The real winner though is that with the old distro centric model - developers
+ had no relationship with their userbase. When users can get the app directly
+ through an software installation that gets it from the distribution repository
+ that is a loss of interaction with the developer. Why is that important? For 
+ one the developer is not able to get an idea of how popular their application 
+ is. There is no opportunity to build a relationship with their users. With
+ an app store, users have the information they need to make informed decisions
+ about the app and who the developer is.
+
+Our current statistics is that over 1,366,781,417 downloads from the app store 
+since 2018 and we have 2,344 apps in the app store today. Since this year 500 apps were
+added. Of course, these don't include from the snapstore or from distributions.
+It shows that there is a fairly robust desire to get apps and more apps are
+being added constantly.
+
+LibAdwaita
+
+LibAdwaita is really GNOME's theme on top of GTK. It consists of a stylesheet + 
+plus widget. But it has one other thing that is exciting and that is it's ability 
+to adjust to 
+
+Wayland
+
+We completely replaced the prior Xorg server - a display server that started 
+life in the 80s. While Xorg was a great technology - over time it became 
+harder manage the code as display hardware continued to evolve. More than that
+a lot of the things that X server was doing was being moved to the Linux 
+kernel.
+
+The Xorg developers started working on a new display server based on everything
+they learned from maintaining Xorg. I will spare you the technical details, 
+but from a person point of view - you're not going to notice much changes unless
+you are a grey beard and used to do things like remote display of applications.
+
+The more important part of this is that there is better security model and a 
+notion that you need permission to access the screen. For the most part, Wayland
+is quickly becoming the default experience with a number of distros. The only
+issue would be those of you who have NVidia cards. This underscore the reason 
+why having your drivers open source is important in order to let the community
+help deal with the issues of the driver. 
+
+There are some significant differences between Wayland and Xorg underneath - 
+ultimately, the experience is going to be no different.
+
+The App Ecosystem is about community
+
+The App Ecosystem has gained great strides as it modernizes its software 
+engineering. We are seeing development speeding substantial thanks to the
+standardization of the tools.
+
+But there is one other thing that's happening.
+
+The ecosystem is coming together to collaboration. While projects like 
+GNOME and KDE might seem outwardly like they are competing. (we aren't)
+Historically, because of sensitivies in design philosophies - the two 
+largest projects have remained as silos. But the last 4 years have seen
+unprecedented collaboration and trust between the two projects. Turns out,
+maybe we don't have the same ideas of a desktop - but we all care about 
+apps! So, collaboration on things like flatpaks, and freedesktop standards
+is driving greater cooperation.
+
+Of all the things that are happening this is the most significant. Why? We are
+greater as the sum of our pieces. No project can go it alone. We must provide
+a united front. Together, we cannot be ignored as we represent the majority of
+the install base of Linux desktop clients.
+
+The genesis of that collaboration started with working together on the Linux
+App Summit. Previous attempts have failed because people came in with their
+desktop hat on. Instead, people came in with their "app ecosystem" hat and 
+saw each other in new ways. Friendships were made, and a new level of trust
+started happening. Members of both projects started attending each others 
+conferences. My hope is that we'll start attending the conferences of other
+important ecosystems like Electron. We are after all the progeny.
+
+Before concluding - let's talk about why aren't we dominating?
+
+What are the challenges that we face going forward - what are our barriers?
+
+Trigger warning: I warn you, some of you might find these thoughts controversial.
+
+The year of the desktop hasn't happen for a number of reasons. Let's pick a
+few.
+
+Sustainability
+
+One of the biggest problem with the app ecosystem is that it has sustainable issues.
+By that I mean, that an independent software developer who wants to target 
+the Linux platform cannot make a living doing it. Turns out that the segment of 
+Linux users are used to not paying money for their apps is fairly large.
+
+Case in point - the Krita developers are able to pay 1-2 developers to work
+full time on Krita thanks to the money they raise from the Microsoft Store. 
+Turns out Microsoft users are happy to pay for these applications.
+
+When a company - be it Microsoft or some other looks at a platform, they look 
+to see if there is a market there. No company is going to invest development,
+marketing, and developers in a platform if they there is no understanding 
+of the compensation.
+
+A lot of folks think there needs to be a killer app or office to bridge the
+gap. That's not the case. They don't see it as a form of economics.
+
+Even Libreoffice and the Documentation Foundation is largely funded by Windows
+users. At times, even they wonder why they should listen to Linux users given
+that their share of the pie is so much smaller than the other platforms they 
+support.
+
+Trademarks and Open Source Code
+
+One of the more interesting problems that we have is around packaging. Many
+developers want to control the distribution in terms what is officially supported. 
+For instance, there is an app called 'Bottles' that has declared that the only
+way you should their app is through the app store. Despite that packages are
+still packaging the app, but doing it incorrectly causing a support maintenance
+burden. In another scenario, the developer added an appeal to give to their
+librepay. The packager removed the code for that and still proceeded to have
+the app available under the same name within the distro.
+
+Distributions are quite interested in having their own unique branding for
+their apps and desktop. Understandable that they would like to have their own
+visual branding. The problem occurs when they add system level themes and 
+colors that override the developers branding, using a different icon, or using
+a theme that no longer makes the app that the developer spent time designing
+look good. In all those cases, users will go back to the developer to complain.
+
+Skewed User Value Proposition
+
+The last bit I want to mention is that the app ecosystem usually has a lot of
+folks who have a skewed view of the value proposition on libre apps. A number
+of users feel that they can talk and behave however they want because an 
+open source app was written to be consumed by the community, as a community
+member they are providing valuble feedback to make it better, but also that
+by using the app they are making it popular.
+
+While indeed open source provides you with an app that is nominally free of
+cost - providing feedback and that too feedback of degrees that can range
+from abusive, racist, etc to benign while an important part of the evolution
+of an app is not the complete story. Users should respect the direction that
+the maintainer wants to take the application, and the priorities they put
+when approaching software engineering who for most is a voluntary work of
+passion to create something useful. The GPL and other open source licenses
+gives you a license to share code and distribute it and give back. It does
+not give you immediate entitlement to influence the direction of the 
+application for merely using the application. To have that level of influence
+requires that you participate as a valued contributor. The care and attention
+that a contribution or opinion is based on the value and frequency of the 
+contribution.
+
+To solve the "Year of the Desktop" will require cultural changes both with
+how we support open source projects, but also how we interact with them.
+Even if you choose not to give financially there are plenty of other methods
+to provide support to a software you love.
+
+Conclusion
+
+I want to end this talk on a general reflection of the app ecosystem. We are 
+individuals, organizations, and entrepreneurs who care deeply about software
+freedom and making our software useful. It's utility is important to us.
+
+We don't really care if we are winning the world. We just want to make folks
+happy. The desktop projects, the app authors - we are united in the need to
+provide you with the best experience we can. All we ask is that you treat us
+with respect, dignity, and understand that it takes time to get to where
+we want to go.
+
+We have plenty of issues but we are working solving them - together. United.
+
+We've built software that is a monument to difficult human endeavors.
+
+We have a lot of challenges, sustainability being the largest one. We aren't
+large community, but our contributions to the commons are galaxy sized.
+
+I'm Sri Ramkrishna, App Ecosystem Contributor, Community Manager for oneAPI
+I hope this talk gives you an insight in the great things that is happening,
+tempered with the challenges that we yet face.
+
+For us, every second, every minute - is the year of the Desktop. We've already
+won. It might take years for the rest of you to realize it.
