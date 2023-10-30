@@ -4,14 +4,36 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>App-Ecosystem</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="css/local.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+<style>
+.container{
+  display: grid;
+  grid-auto-flow: column;
+}
+.container p {
+  font-size: 18px;
+}
+.col{
+  flex:1;
+}
+.fragment.blur {
+  filter: blur(5px);
+}
+.fragment.blur.visible {
+  filter: none;
+}
+</style>
+}
+}
 	</head>
 	<body>
 		<div class="reveal">
@@ -25,14 +47,14 @@
           </aside>
         </section>
 				<section>
-          <h2> A Brief About Me </h2>
+          <h2> Who Am I?</h2>
 
           <h3 class="r-fit-text"> Community Manager @ Intel for oneAPI </h3>
 
           <ul>
             <li> Started contributing to the GNOME Project in 1997 </li>
-            <li> Help build community and engagement within the project </li>
-            <li> Help start Linux App Summit - that help build the App Ecosystem </li>
+            <li> Helped build community and engagement within the project </li>
+            <li> Helped start Linux App Summit </li>
           </ul>
 
           <aside class="notes">
@@ -113,20 +135,195 @@
 
         <section data-auto-animate>
           <h1 class="r-fit-text">How did this situation arise?</h1>
-          <h1 class="r-fit-text">Why haven't we taken the desktop?</h1>
+          <h1 class="r-fit-text">Why haven't we taken over the desktop?</h1>
           <aside class="notes">
-            Let's hold that question for a bit. I first want to address the sisphyean 
-            element. That we are building a body of work that has no impact.
-
-            I have some tales to tell!
+            How did this happen? It might be good to do a brief historical context on what happened over the past 25 odd years.
           </aside>
         </section>
 
         <section data-auto-animate>
-
+          <p>It's 1992</p>
+          <img src="/images/OSS-year-1998.svg">
         </section>
 
+        <section data-auto-animate>
+          <p>It's 2002</p>
+          <img src="/images/OSS-Year-2002.svg">
+        </section>
 
+        <section data-auto-animate>
+          <p>It's 2004</p>
+          <img src="/images/OSS-Year-2004.svg">
+        </section>
+
+        <section data-auto-animate>
+          <p>It's 2008</p>
+          <img src="/images/OSS-Year-2008.svg">
+        </section>
+
+        <section data-auto-animate>
+          <p>It's 2019</p>
+          <img src="/images/OSS-Year-2011.svg">
+        </section>
+
+        <section>
+          <p class="fragment fade-in-then-semi-out"> The App Ecosystem got moved to the outer fringes as open source started favoring more corporate oriented projects. <p/>
+          <p class="fragment fade-in"> As newcomers joined the Open Source ecosystem - they didn't have any knowledge of these other projects or their contributions. <p/>
+          <p class="fragment"> 😥 <p/>
+        </section>
+
+        <section>
+          <p>  The App Ecosystems has had significant contributions to the ecosystem - that you might be unaware of <p/>
+        </section>
+        <section>
+          <p> Tale of Two File Browsers </p>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="col">
+              <img width="280px" height="100%" src="/images/kde-logo-white-blue-source.svg">
+            </div>
+            <div class="col">
+              <p class="fragment"> Had a file browser called konqueror - it allowed you to load any content from pdf and load it within the browser</p>
+              <p class="fragment"> for HTML content - they wrote a standards compliant HTML rendering image called KHTML</p>
+              <p class="fragment"> Small, efficient - built by the KDE Community</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="col">
+              <img src="/images/gnome_vertical_lockup.svg">
+            </div>
+            <div class="col">
+              <p class="fragment">Had a file browser called GNOME Midnight Commander (gmc) - not the most sophisticated of file browsers.</p>
+              <p class="fragment">A guy named Andy Hertfield built a start up called 'Eazel', and started writing a GNOME based file browser called nautilus.</p>
+              <p class="fragment">The idea was to add an internet attached storage - essentially they were working on DropBox before Dropbox."</p>
+              <p class="fragment">The startup eventually failed - and most everyone went back to Apple.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="col">
+              <img width="280px" src="/images/Apple_logo_white.svg">
+            </div>
+            <div class="col">
+              <p class="fragment">A gal named Lisa Melton (deadname: Don Melton) started a project along with many of the former members of Eazel. Apple was interested in doing their own browser. </p>
+              <p class="fragment">KHTML became the perfect choice for them because it was light, fast, and standards compliant and a perfect base for their own project</p>
+              <p class="fragment">That project ended up being called 'WebKit'</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <p> So essentally the work of two projects ended up creating 'WebKit' which now powers - today's web apps, and a plethora of browsers like Chrome, Safari, and in fact the web browser for KDE and GNOME, and finally Electron.  </p>
+        </section>
+        <section>
+          <p> But that's not all! </p>
+        </section>
+
+        <section>
+          <p class="fragment custom blur"> DBus </p>
+          <p class="fragment custom blur"> Systemd</p>
+          <p class="fragment custom blur"> libXML2</p>
+          <p> These are an indelible part of every Linux based platform - SmartTVs, Cars, Edge Computing, Servers, so much more. </p>
+        </section>
+
+        <section>
+          <p> The engineering required to do a full blown desktop is </p>
+          <h3 class="r-fit-text"> MASSIVE </h3>
+        </section>
+
+        <section>
+          <img class="r-stretch" src="/images/App-Ecosystem-Layers.svg">
+        </section>
+
+        <section>
+          <p> A Renaissance is Happening </p>
+        </section>
+
+        <section>
+          <p> The genesis of this renaissance comes from the improved tooling and software engineering that is happening. </p>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="col">
+              <img  width="800px" height="700px" src="/images/AppEcoSystem-Timeline.svg">
+            </div>
+            <div class="col">
+              <p class="fragment"> Everyone moves to Git. </p>
+              <p class="fragment"> Flatpak is introduced. Solving a lot of problems with packaging. </p>
+            </div>
+        </section>
+        <section>
+          <p> Flatpak - Solving the packaging problem </p>
+          <p class="fragment"> Every distro had their own toolchain of various versions. </p>
+          <p class="fragment"> Every distro would have their own bug database for app ecosystem software. </p>
+          <p class="fragment"> If a closed source app To reach the greatest audience you'd have to package both debian and rpm. </p>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="col">
+              <img  width="800px" height="700px" src="/images/AppEcoSystem-Timeline.svg">
+            </div>
+            <div class="col">
+              <p class="fragment"> GNOME moves to GitLab. A number of other projects follow suit - KDE, Debian, Fedora, and so on</p>
+              <p class="fragment"> This is the turning point for the entire ecosystem because we have now fully moved to modern tools with capabilities like CI/CD, Issues, Wikis.</p>
+              <p class="fragment"> GNOME OS arrives... </p>
+            </div>
+        </section>
+
+        <section>
+          <p> GNOME OS - an idea whose time has come! </p>
+          <p class="fragment"> A dream come true - literally. GNOME has been talking about GNOME OS for a decade. The ability to drive GNOME's vision on their terms. </p>
+        </section>
+
+        <section>
+          <p> GNOME OS allows: </p>
+          <p class="fragment"> Designers to prototype new ideas quickly.</p>
+          <p class="fragment"> Provide a distributable version of GNOME to be used in user studies.</p>
+          <p class="fragment"> Build robust Q/A pipelines to test software and new design patterns and/or regressions. </p>
+          <p class="fragment"> Allow the community to test run GNOME daily.</p>
+        </section>
+
+        <section>
+          <p> A highly reliable, faster paced development cycle! </p>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="col">
+              <img  width="800px" height="700px" src="/images/AppEcoSystem-Timeline.svg">
+            </div>
+            <div class="col">
+              <p class="fragment"> Moved to a more modern display server. Wayland is a new display server that replaces X11 server.</p>
+              <p class="fragment"> Much reduced overhead, and focused on a drawing model rather an comprehensive model that included everything.</p>
+              <p class="fragment"> Finally, we're raising funds and making investments in accessibility, better safety via encrypted per user home directories.</p>
+            </div>
+        </section>
+
+        <section>
+          <p>As an ecosystem, we are now also focused on each other. KDE and GNOME, working together to build apps. Through effots like the Linux App Summit.</p>
+          <p> Let's focus on:"
+          <p class="fragment"> Cooperating on standards. </p>
+          <p class="fragment"> Share ideas on design. </p>
+          <p class="fragment"> Provide a united front when working with other ecosystems - by an individual project, we might be small. But together we are powerful.</p>
+        </section>
+
+        <section>
+          <p> We have a lot of challenges still. Going back to why the question on why the desktop has not yet been successful.</p>
+        </section>
+
+        <section>
+          <p> We have the following issues.<p>
+          <p class="fragment"> We are not yet sustainable. A platfrom can only be sustainable if people can make a living off of it.</p>
+          <p class="fragment">
 			</div>
 		</div>
 
